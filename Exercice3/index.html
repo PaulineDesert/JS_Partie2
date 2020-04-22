@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 3</title>
+</head>
+
+<body>
+    <h1>Exercice 3</h1>
+    <p>Demander un nombre à l'utilisateur. S'il est pair afficher <i>Le nombre est pair</i>, sinon afficher <i>Le nombre est impair</i>.</p>
+
+
+
+
+
+
+
+    <script>
+      
+        function checkEvenNumber(number) {
+        if (number % 2 == 0){
+                 return true;
+             } else {
+                 return false;
+            }
+         }
+
+         let number = prompt('Choisissez un nombre');
+        
+         if ( checkEvenNumber(number) ) {
+            alert( 'Le nombre est pair' );
+         } else {
+            alert( 'Le nombre est impair' );
+         }
+
+    </script>
+</body>
+
+</html>
