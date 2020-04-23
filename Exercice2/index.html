@@ -11,30 +11,35 @@
     <h1>Exercice 2</h1>
     <p>Demander à l'aide d'une boîte de dialogue l'âge d'un utilisateur. S'il a plus de 18 ans, lui afficher <i>Vous êtes majeur</i>, sinon lui afficher <i>Vous êtes mineur</i>.</p>
 
-
-
-
-
-
-
     <script>
       
-        function checkAge(age) {
-        if (age >= 18) {
-                 return true;
-             } else {
-                 return false;
-            }
-         }
+        // function checkAge(age) {
+        // if (age >= 18) {
+        //          return true;
+        //      } else {
+        //          return false;
+        //     }
+        //  }
 
-         let age = prompt('Quel âge avez-vous ?');
+        //  let age = prompt('Quel âge avez-vous ?');
         
-         if ( checkAge(age) ) {
-            alert( 'Vous êtes majeur' );
-         } else {
-            alert( 'Vous êtes mineur' );
-         }
+        //  if ( checkAge(age) ) {
+        //     alert( 'Vous êtes majeur' );
+        //  } else {
+        //     alert( 'Vous êtes mineur' );
+        //  }
 
+        let age = prompt('Quel âge avez-vous ?');
+
+        if (age >= 18) {
+            alert( 'Vous êtes majeur' );
+        } else if (age <= 18) {
+            alert( 'Vous êtes mineur' );
+        } else {
+            prompt('Veuillez renseigner un nombre');
+        }
+
+        
     </script>
 </body>
 

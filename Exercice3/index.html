@@ -11,29 +11,31 @@
     <h1>Exercice 3</h1>
     <p>Demander un nombre à l'utilisateur. S'il est pair afficher <i>Le nombre est pair</i>, sinon afficher <i>Le nombre est impair</i>.</p>
 
-
-
-
-
-
-
     <script>
       
-        function checkEvenNumber(number) {
-        if (number % 2 == 0){
-                 return true;
-             } else {
-                 return false;
-            }
-         }
+        // function checkEvenNumber(number) {
+        // if (number % 2 == 0){
+        //          return true;
+        //      } else {
+        //          return false;
+        //     }
+        //  }
 
          let number = prompt('Choisissez un nombre');
         
-         if ( checkEvenNumber(number) ) {
+        //  if ( checkEvenNumber(number) ) {
+        //     alert( 'Le nombre est pair' );
+        //  } else {
+        //     alert( 'Le nombre est impair' );
+        //  }
+
+        if (number % 2 == 0){
             alert( 'Le nombre est pair' );
-         } else {
+        } else if (number % 2 == 1) {
             alert( 'Le nombre est impair' );
-         }
+        } else {
+            prompt( 'Choisissez un nombre' );
+        }
 
     </script>
 </body>

@@ -19,7 +19,7 @@
 
     <script>
 
-        let note = prompt('Donnez-nous une note entre 0 et 10');
+        let note = +(prompt('Donnez-nous une note entre 0 et 10'));
       
         if (note >= 0 && note <= 3) {
             alert( 'Nul' );
@@ -27,8 +27,10 @@
             alert( 'Moyen' );
         } else if (note >= 8 && note <= 9) {
             alert( 'Bien' );
-        } else if (note = 10) {
+        } else if (note == 10) {
             alert( 'Excellent' );
+        } else {
+            alert( 'try again')
         }
 
     </script>
